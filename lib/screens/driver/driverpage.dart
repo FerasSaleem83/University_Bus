@@ -271,7 +271,8 @@ class _DriverScreenState extends State<DriverScreen> {
   }
 
   void _checkNearbyPeople(Position position) {
-    const double proximityThreshold = 40; // المسافة بالأمتار
+    const double proximityThreshold =
+        10; // المسافة بالأمتار // تم تغييرها لفحص التطبيق من 40 الى 10
 
     nearbyPeopleCount = 0; // إعادة تهيئة العداد
 
@@ -537,18 +538,18 @@ class _DriverScreenState extends State<DriverScreen> {
 
   @override
   Widget build(BuildContext context) {
-    bool isLocationFar = false;
+    // bool isLocationFar = false;
 
-    if (_position != null) {
-      double distanceInMeters = Geolocator.distanceBetween(
-        _position!.latitude,
-        _position!.longitude,
-        targetLatitude,
-        targetLongitude,
-      );
+    // if (_position != null) {
+    //   double distanceInMeters = Geolocator.distanceBetween(
+    //     _position!.latitude,
+    //     _position!.longitude,
+    //     targetLatitude,
+    //     targetLongitude,
+    //   );
 
-      isLocationFar = distanceInMeters > distanceThreshold;
-    }
+    //   isLocationFar = distanceInMeters > distanceThreshold;
+    // }
 
     return Builder(builder: (context) {
       return StreamBuilder<DocumentSnapshot>(
@@ -730,8 +731,7 @@ class _DriverScreenState extends State<DriverScreen> {
                                           int numberStudents = snapshot
                                                   .data!['numberstudents'] ??
                                               0;
-                                          if (numberChairs <= 0 ||
-                                              isLocationFar) {
+                                          if (numberChairs <= 0) {
                                             return AlertDialog(
                                               backgroundColor:
                                                   const Color.fromARGB(

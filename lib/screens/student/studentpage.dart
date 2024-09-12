@@ -113,7 +113,8 @@ class _StudentScreenState extends State<StudentScreen> {
   }
 
   void _checkNearbyPeople(Position position) async {
-    const double proximityThreshold = 25; // المسافة بالأمتار
+    const double proximityThreshold =
+        10; // المسافة بالأمتار // تم تغييرها لفحص التطبيق من 25 الى 10
 
     nearbyPeopleCount = 0; // إعادة تهيئة العداد
 

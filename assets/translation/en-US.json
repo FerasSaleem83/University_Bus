@@ -163,5 +163,16 @@
 "message_delete_Complaint": "Complaint deleted successfully",
 "complaints_message": "Please select the complaint",
 "message_update_complaint": "Complaint updated successfully",
-"error_show_map":"Map not available on web"
+"error_show_map":"Map not available on web",
+"license_start_time": "Select Time",
+"add_timer":"Add Appointment",
+"add_time_new":"Add Time New",
+"license_start_time_message":"Please Select A Time",
+"add_new_journey":"Add New Journey",
+"place_schedule":"Place Schedule",
+"location_bus":"Location Busses",
+"timer_bus":"Appointment Busses",
+"welcome":"Welcome To Israa University",
+"guest":"Guest",
+"login_account_guset":"Login Guest Account"
 }

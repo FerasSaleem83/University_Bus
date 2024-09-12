@@ -56,7 +56,7 @@ class _ViewBusSchedulesState extends State<ViewBusSchedules> {
     return Scaffold(
       appBar: widget.type == 'admin'
           ? StyleAppBar(
-              title: 'مكان الجولات',
+              title: 'place_schedule'.tr(),
               actionBar: IconButton(
                   onPressed: () {
                     Navigator.push(
@@ -69,7 +69,7 @@ class _ViewBusSchedulesState extends State<ViewBusSchedules> {
                   icon: const Icon(Icons.add)),
             )
           : StyleAppBar(
-              title: 'مكان الجولات',
+              title: 'place_schedule'.tr(),
             ),
       body: Container(
         width: double.infinity,

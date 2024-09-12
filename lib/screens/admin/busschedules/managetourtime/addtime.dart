@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:bus_uni2/widget/app_bar.dart';
 import 'package:bus_uni2/widget/gradient.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -58,8 +60,8 @@ class _AddTimeState extends State<AddTime> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('sucss'.tr()),
-            content: const Text('done done'),
+            title: Text('sucessfully'.tr()),
+            content: Text('message_add_place'.tr()),
             actions: <Widget>[
               TextButton(
                 onPressed: () {
@@ -104,7 +106,7 @@ class _AddTimeState extends State<AddTime> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: StyleAppBar(title: 'اضافة وقت جديد'),
+      appBar: StyleAppBar(title: 'add_time_new'.tr()),
       body: Container(
         decoration: BoxDecoration(
           gradient: StyleGradient(),
@@ -127,11 +129,11 @@ class _AddTimeState extends State<AddTime> {
                         ),
                         validator: (value) {
                           if (value == null) {
-                            return 'license_start_date_message'.tr();
+                            return 'license_start_time_message'.tr();
                           }
                           return null;
                         },
-                        name: 'license_start_date'.tr(),
+                        name: 'license_start_time'.tr(),
                         inputType: InputType.time,
                         locale: const Locale('en', 'US'),
                         onChanged: (value) {
@@ -145,8 +147,8 @@ class _AddTimeState extends State<AddTime> {
                             fontSize: 25.sp,
                             color: Colors.black,
                           ),
-                          labelText: 'license_start_date'.tr(),
-                          hintText: 'license_start_date'.tr(),
+                          labelText: 'license_start_time'.tr(),
+                          hintText: 'license_start_time'.tr(),
                           hintStyle: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 25.sp,
@@ -226,7 +228,7 @@ class _AddTimeState extends State<AddTime> {
                         backgroundColor: const Color.fromARGB(255, 0, 14, 67),
                       ),
                       child: Text(
-                        'اضافة موعد'.tr(),
+                        'add_timer'.tr(),
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 25.sp,

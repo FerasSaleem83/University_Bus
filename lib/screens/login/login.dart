@@ -455,7 +455,7 @@ class _LoginAndSignupState extends State<LoginAndSignup> {
                                       );
                                     },
                                     child: Text(
-                                      'التسجيل بحساب ضيف'.tr(),
+                                      'login_account_guset'.tr(),
                                       style: TextStyle(
                                         fontSize: 25.sp,
                                         color: const Color.fromARGB(

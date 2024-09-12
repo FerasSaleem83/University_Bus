@@ -271,7 +271,7 @@ class _BusLocationState extends State<BusLocation> {
 
         //عرض بيانات المستخدم
         return Scaffold(
-          appBar: StyleAppBar(title: 'مواقع الحافلات'),
+          appBar: StyleAppBar(title: 'location_bus'.tr()),
           drawer: const GuestDrawer(),
           body: Container(
             decoration: BoxDecoration(

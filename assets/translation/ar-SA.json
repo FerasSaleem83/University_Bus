@@ -163,5 +163,15 @@
 "message_delete_Complaint": "تم حذف الشكوى بنجاح",
 "complaints_message": "يرجى اختيار الشكوى",
 "message_update_complaint": "تم تحديث الشكوى بنجاح",
-"error_show_map":"الخريطة غير متاحة على الويب"
+"error_show_map":"الخريطة غير متاحة على الويب",
+"license_start_time": "تعيين الوقت",
+"add_timer":"اضافة موعد",
+"add_time_new":"اضافة وقت جديد",
+"license_start_time_message":"يرجى اضافة الوقت",
+"add_new_journey":"اضافة جولة جديدة","place_schedule":"مكان الجولات",
+"location_bus":"مواقع الباصات",
+"timer_bus": "مواعيد انطلاق الباصات",
+"welcome":"مرحبا بكم في جامعة الاسراء",
+"guest":"ضيف",
+"login_account_guset":"التسجيل بحساب ضيف"
 }

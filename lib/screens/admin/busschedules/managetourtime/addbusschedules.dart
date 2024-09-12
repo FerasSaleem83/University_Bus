@@ -268,8 +268,8 @@ class _AddBusScheduleState extends State<AddBusSchedule> {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              title: Text('sucss'.tr()),
-              content: const Text('done done'),
+              title: Text('sucessfully'.tr()),
+              content: Text('message_add_place'.tr()),
               actions: <Widget>[
                 TextButton(
                   onPressed: () {
@@ -293,7 +293,7 @@ class _AddBusScheduleState extends State<AddBusSchedule> {
           builder: (BuildContext context) {
             return AlertDialog(
               title: Text('error'.tr()),
-              content: const Text('Could not retrieve place translations.'),
+              content: Text('error'.tr()),
               actions: <Widget>[
                 TextButton(
                   onPressed: () {
@@ -339,7 +339,7 @@ class _AddBusScheduleState extends State<AddBusSchedule> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: StyleAppBar(title: 'اضافة جولة جديدة'),
+      appBar: StyleAppBar(title: 'add_new_journey'.tr()),
       body: Container(
         decoration: BoxDecoration(
           gradient: StyleGradient(),
@@ -433,20 +433,28 @@ class _AddBusScheduleState extends State<AddBusSchedule> {
                     ),
                     SizedBox(width: 10.w),
                     Expanded(
-                        flex: 1,
-                        child: ElevatedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const AddPlace(),
-                                ),
-                              );
-                            },
-                            child: const Text(
-                              'اضافة مكان',
-                              textAlign: TextAlign.center,
-                            )))
+                      flex: 1,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const AddPlace(),
+                            ),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromARGB(255, 0, 14, 67),
+                        ),
+                        child: Text(
+                          'add_place'.tr(),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 25.sp,
+                          ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
                 SizedBox(height: 50.h),
@@ -460,11 +468,11 @@ class _AddBusScheduleState extends State<AddBusSchedule> {
                         ),
                         validator: (value) {
                           if (value == null) {
-                            return 'license_start_date_message'.tr();
+                            return 'license_start_time_message'.tr();
                           }
                           return null;
                         },
-                        name: 'license_start_date'.tr(),
+                        name: 'license_start_time'.tr(),
                         inputType: InputType.time,
                         locale: const Locale('en', 'US'),
                         onChanged: (value) {
@@ -478,8 +486,8 @@ class _AddBusScheduleState extends State<AddBusSchedule> {
                             fontSize: 25.sp,
                             color: Colors.black,
                           ),
-                          labelText: 'license_start_date'.tr(),
-                          hintText: 'license_start_date'.tr(),
+                          labelText: 'license_start_time'.tr(),
+                          hintText: 'license_start_time'.tr(),
                           hintStyle: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 25.sp,
@@ -559,7 +567,7 @@ class _AddBusScheduleState extends State<AddBusSchedule> {
                         backgroundColor: const Color.fromARGB(255, 0, 14, 67),
                       ),
                       child: Text(
-                        'اضافة موعد'.tr(),
+                        'add_timer'.tr(),
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 25.sp,

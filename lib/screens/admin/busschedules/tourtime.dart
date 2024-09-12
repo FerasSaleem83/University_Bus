@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_null_comparison
+// ignore_for_file: unnecessary_null_comparison, use_build_context_synchronously
 
 import 'package:bus_uni2/screens/admin/busschedules/managetourtime/addtime.dart';
 import 'package:bus_uni2/widget/app_bar.dart';

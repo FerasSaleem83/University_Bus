@@ -20,7 +20,7 @@ class _HomeGuestState extends State<HomeGuest> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: StyleAppBar(title: 'صفحة الضيف'),
+      appBar: StyleAppBar(title: 'guest'.tr()),
       drawer: const GuestDrawer(),
       body: Container(
         height: double.infinity,
@@ -41,7 +41,7 @@ class _HomeGuestState extends State<HomeGuest> {
                   ),
                   SizedBox(height: 25.h),
                   Text(
-                    'Welcome To Israa University',
+                    'welcome'.tr(),
                     style: TextStyle(
                       color: const Color.fromARGB(255, 0, 14, 67),
                       fontSize: 40.sp,
@@ -63,7 +63,7 @@ class _HomeGuestState extends State<HomeGuest> {
                           ),
                         );
                       },
-                      label: Text('مواقع الباصات'.tr()),
+                      label: Text('location_bus'.tr()),
                       style: ElevatedButton.styleFrom(
                         textStyle: TextStyle(
                           color: Colors.white,
@@ -96,7 +96,7 @@ class _HomeGuestState extends State<HomeGuest> {
                           ),
                         );
                       },
-                      label: Text('مواعيد انطلاق الباصات'.tr()),
+                      label: Text('timer_bus'.tr()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color.fromARGB(255, 0, 14, 67),
                         textStyle: TextStyle(
@@ -128,7 +128,7 @@ class _HomeGuestState extends State<HomeGuest> {
                           ),
                         );
                       },
-                      label: Text('تسجبل الدخول'.tr()),
+                      label: Text('login_button'.tr()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color.fromARGB(255, 0, 14, 67),
                         textStyle: TextStyle(
